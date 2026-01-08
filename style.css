@@ -1,0 +1,187 @@
+/* ===== RESET BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #3aa0ff;
+}
+
+/* ===== CONTENITORE ===== */
+#app {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+/* ===== SWITCH LINGUA DEMO ===== */
+.demo-lang {
+  margin-top: 10px;
+}
+
+.demo-lang button {
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #3aa0ff;
+  background: transparent;
+  color: #3aa0ff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.demo-lang button:hover {
+  background: #3aa0ff;
+  color: #000;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .highlight {
+    grid-column: span 2;
+  }
+}
+
+/* ===== BLOCCHI ===== */
+.block {
+  background: #0d0d0d;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(58,160,255,0.08);
+}
+
+.highlight {
+  border: 2px solid #3aa0ff;
+}
+
+.block h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* ===== BOTTONI ===== */
+button {
+  margin: 6px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #3aa0ff;
+  background: transparent;
+  color: #3aa0ff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3aa0ff;
+  color: #000;
+}
+
+/* ===== SETTORI ===== */
+.sectors {
+  margin-bottom: 10px;
+}
+
+/* ===== RADIO ===== */
+.radio-buttons {
+  margin-bottom: 10px;
+}
+
+/* ===== ON AIR ===== */
+.on-air {
+  margin-top: 10px;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #555;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.on-air.on {
+  color: red;
+  border-color: red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* ===== ANNUNCIO ===== */
+textarea {
+  width: 100%;
+  height: 110px;
+  border-radius: 8px;
+  padding: 12px;
+  background: #000;
+  color: #3aa0ff;
+  border: 1px solid #3aa0ff;
+  font-size: 18px;
+  resize: none;
+}
+
+.languages {
+  margin: 12px 0;
+}
+
+.voice {
+  margin-bottom: 10px;
+}
+
+.voice label {
+  margin-right: 10px;
+}
+
+.voice select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #3aa0ff;
+  background: #000;
+  color: #3aa0ff;
+}
+
+/* ===== PLAY ANNUNCIO ===== */
+.play-ad {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* ===== CONTROLLO ===== */
+.frequency span {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+}
