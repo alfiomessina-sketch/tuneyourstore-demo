@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Tune Your Store – Live Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <header>
+    <img src="https://i.imgur.com/Tp2C2vk.png" alt="Tune Your Store">
+    <h1>Live Demo</h1>
+
+    <!-- SWITCH LINGUA DEMO -->
+    <div class="demo-lang">
+      <button data-demo="it">🇮🇹 Italiano</button>
+      <button data-demo="de">🇩🇪 Deutsch</button>
+      <button data-demo="en">🇬🇧 English</button>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <!-- BLOCCO MUSICA -->
+    <section class="block">
+      <h2 id="titleMusic">Musica nel tuo locale</h2>
+
+      <div class="sectors">
+        <button data-sector="bar">☕ Bar</button>
+        <button data-sector="shop">🛍️ Negozio</button>
+        <button data-sector="gym">🏋️ Palestra</button>
+      </div>
+
+      <div class="radio-buttons">
+        <button data-radio="HOT">HOT</button>
+        <button data-radio="CHILL">CHILL</button>
+        <button data-radio="LOVE">LOVE</button>
+        <button data-radio="OFF">OFF</button>
+      </div>
+
+      <div id="onAir" class="on-air">OFF AIR</div>
+    </section>
+
+    <!-- BLOCCO ANNUNCIO -->
+    <section class="block highlight">
+      <h2 id="titleAd">Comunica con i tuoi clienti</h2>
+
+      <textarea id="message"></textarea>
+
+      <div class="languages" id="langButtons"></div>
+
+      <div class="voice">
+        <label id="labelVoice">Voce DJ</label>
+        <select>
+          <option>DJ Maschile</option>
+          <option>DJ Femminile</option>
+        </select>
+      </div>
+
+      <button class="play-ad" id="playAdBtn">▶ PLAY ANNUNCIO</button>
+    </section>
+
+    <!-- BLOCCO CONTROLLO -->
+    <section class="block">
+      <h2 id="titleControl">Controllo semplice</h2>
+
+      <div class="frequency">
+        <span id="freq15">⏱ Ogni 15 min</span>
+        <span id="freq30">⏱ Ogni 30 min</span>
+        <span id="freq60">⏱ Ogni 60 min</span>
+      </div>
+    </section>
+
+  </div>
+
+  <audio id="music"></audio>
+  <audio id="ad"></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
